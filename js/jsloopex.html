@@ -41,7 +41,7 @@
         }
         
         // nested lopp!
-        for(let i=5;i>=1;i--){
+        for(let i=1;i<6;i++){
             for(let j=1;j<=i;j++){
                 document.write(` * `);
             }
@@ -51,13 +51,13 @@
         number=1
         for(let i=5;i>=1;i--){
             for(let j=1;j<=i;j++){
-                document.write(` ${number--} `);
+                document.write(` ${i} `);
             }
             document.write('<br>')
         }
 
         number=1;
-        //let count=prompt('Enter a number for row count!')
+        let count=prompt('Enter a number for row count!')
         for(let i=1;i<=count;i++){
             for(let j=1;j<=i;j++){
                 document.write(` ${number++} `);
