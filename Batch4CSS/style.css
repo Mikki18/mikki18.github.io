@@ -1,0 +1,11 @@
+span{
+    color: rgb(45,65,94); 
+    /*color: #ff0000;*/ /*hex code*/
+    /*color: #f00;*/ /*short hex code*/
+    line-height: 1in;
+    letter-spacing: 20px;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}

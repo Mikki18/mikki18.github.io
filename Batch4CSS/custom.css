@@ -1,0 +1,19 @@
+/*univesal selector*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Tag/Element Selector*/
+h2{
+    color: sienna;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*attribute selector*/
+a[target="_blank"]{
+    text-decoration: none;
+}
+input[type="text"]{
+    outline: none;
+}
