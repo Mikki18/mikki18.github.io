@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Register</title>
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body style="background-color: cadetblue;">
+    <h2>Student Register</h2>
+    <form action="student.php" method="get">
+
+        <label for="name">Name:</label>
+        <input type="text" name="nmae" id="nmae" placeholder="Mg Mg"> <br>
+
+        <label for="fname">Father Name:</label>
+        <input type="text" name="fname" id="fname" placeholder="U Mg Mg"> <br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"> <br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone"> <br>       
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob" id="dob">
+        <br>        
+
+        <label for="genter">Genter:</label>
+        <input type="radio" name="genter" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="genter" id="female">
+        <label for="female">Female</label> <br>
+
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" cols="20" rows="2"></textarea> <br>
+
+        <label for="">Qualification:</label>
+        <div>
+            <input type="checkbox" name="" id="hschool" disabled>
+            <label for="hschool">High School (10th)</label>
+        </div>
+        <div>
+            <input type="checkbox" name="" id="hrschool">
+            <label for="hrschool">Higher School (12th)</label>
+        </div>
+        <div>
+            <input type="checkbox" name="" id="garduation">
+            <label for="garduation">Garduation (Bachelors)</label>
+        </div>
+        <div>
+            <input type="checkbox" name="" id="pgarduation">
+            <label for="pgarduation">Pre Garduation (Mester)</label>
+        </div>
+
+        <fieldset class="fieldset">
+            <legend>Rules</legend>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Accusamus, beatae. Repudiandae reprehenderit, inventore, 
+                rem saepe consequuntur eveniet consectetur corrupti unde 
+                aliquid ea quibusdam id adipisci nobis est! Cum, cupiditate! Explicabo!
+            </p>
+            <ul>
+                <li>This is First Rule</li>
+                <li>This is Second Rule</li>
+                <li>This is Third Rule</li>
+                <li>This is Fourth Rule</li>
+                <li>This is Fifth Rule</li>
+                <li>This is Sixth Rule</li>
+                <li>This is Seventh Rule</li>
+            </ul>            
+        </fieldset>
+
+        <input type="submit" value="Submit">
+        <br>
+
+        <p></p>
+        <p class="thankyou">Thank You!</p>
+        <p></p>
+
+    </form>
+</body>
+</html>
