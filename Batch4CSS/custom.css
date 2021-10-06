@@ -225,3 +225,94 @@ div.float_right img{
     width: 40%;
     float: right;
 }
+
+/*grid*/
+.grid1, .grid2, .grid3, .grid4, .grid5, .grid6{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+div.grid1 div, .grid2 div, .grid3 div, 
+.grid4 div, .grid5 div, .grid6 div{
+    color: rgba(248, 248, 248, 0.747);
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    border: black groove 1px;
+}
+
+.grid2{
+    grid-column-gap: 40px;
+}
+
+.grid3{
+    grid-row-gap: 30px;
+}
+
+.grid4{
+    grid-gap: 30px;
+}
+
+.grid5 .one{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.grid6 .two{
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+/*position*/
+.relative_parent{
+    border: groove black;
+    width: 1000px;
+    height: 500px;
+}
+
+.relative{
+    width: 400px;
+    height: 200px;
+    border: hotpink groove;
+    position: relative;
+    top: 100px;
+    left: 140px;
+
+}
+
+.absolute_parent{
+    width: 1000px;
+    height: 600px;
+    border: black groove;
+}
+
+.absolute{
+    width: 600px;
+    height: 200px;
+    border: groove hotpink;
+    position: absolute;
+    top: 100px;
+    left: 400px;
+}
+
+.fixed{
+    position: fixed;
+    top: 50px;
+    left: 1100px;
+}
+
+/*Font*/
+.online{
+    font-family: 'Birthstone', cursive;
+    font-size: 50px;
+}
+
+@font-face{
+    src: url(Akronim-Regular.ttf);
+    font-family: Akronim;
+}
+
+.offline{
+    font-family: Akronim;
+    font-size: 50px;
+}
