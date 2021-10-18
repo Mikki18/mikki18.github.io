@@ -186,3 +186,137 @@ footer p{
     margin-top: 40px;
     margin-left: 90px;
 }
+
+.SI{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.SI img{
+    width: 50%;
+    height: 300px;
+    border: black groove;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.SI div img:hover{
+    transform: translate(4px, -5px);
+    transition-duration: .5s;
+}
+
+.SI1{
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: yellow;
+    margin-left: 30px;
+}
+
+.d{
+    background-color: black;
+    color: white;
+    margin: 20px 90px;
+    border: 10px solid gray;
+    border-radius: 5px;
+}
+
+.d .par1{
+    padding-left: 100px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.d .par{
+    text-indent: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+fieldset{
+    margin: 30px 60px;
+}
+
+.d ul{
+    padding: 10px 150px;
+}
+
+.p p{
+    text-align: left;
+}
+
+.form{
+    margin: 100px 150px;
+    width: 80%;
+    background-color: black;
+    color: white;
+    border: 10px gray solid;
+    border-radius: 5px;
+}
+
+
+input[type="text"],input[type="email"],input[type="tel"],textarea,input[type="date"],select {
+    width: 30%;
+    height: 25px;
+    border: 1px solid yellow;
+    background-color: white;
+    border-radius: 5px;
+}
+
+input[type="text"]:hover,input[type="email"]:hover,input[type="tel"]:hover,
+textarea:hover,input[type="date"]:hover,select:hover{
+    transform: translate(4px, -5px);
+    transition-duration: .5s;
+}
+
+.form1{
+    padding-left: 200px;
+    padding-top: 50px;
+    text-align: left;
+}
+
+.form2{
+    padding-right: 200px;
+    padding-top: 20px;
+    text-align: right;
+}
+
+input[type="text"]:focus,input[type="email"]:focus,input[type="tel"]:focus,textarea:focus{
+    background-color: gray;
+}
+
+.submit{
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: yellow;
+}
+
+.form3{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.h3{
+    padding-top: 20px;
+    padding-left: 100px;
+}
+
+.fie p{
+    padding: 20px 100px;
+}
+
+.fie ul{
+    
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+input[type="radio"]:checked+label{
+    color: yellow;
+}
