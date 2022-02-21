@@ -1,0 +1,407 @@
+:root {
+  --bg: rgb(100, 207, 123);
+  --bgt: rgba(23, 59, 23, 0.582);
+  --fg: rgb(84, 230, 150);
+  --nh: 80px;
+  --rh: 90px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a {
+  color: springgreen;
+}
+
+nav a:hover {
+  color: rgb(192, 136, 192);
+}
+
+nav .tital {
+  color: var(--fg);
+  font-size: 2em;
+  line-height: var(--nh);
+  font-family: "Neonderthaw", cursive;
+  margin-left: 20px;
+  float: left;
+  margin-right: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+nav .links {
+  display: inline;
+  position: absolute;
+  font-size: 1.2em;
+  font-family: "Quintessential", cursive;
+  perspective: 800px;
+}
+
+nav .links a {
+  line-height: var(--nh);
+  float: left;
+  margin: 0px 10px;
+  display: block;
+  transition: transform 0.2s;
+}
+
+nav .links a:hover {
+  transform: translateZ(50px);
+}
+
+nav .social a {
+  line-height: var(--nh);
+  margin: 0px 10px;
+  display: inline-block;
+  transition: transform 0.8s;
+}
+
+nav .social a:hover {
+  transform: rotateY(360deg);
+}
+
+nav .social {
+  display: inline;
+  float: right;
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+nav .menu-bar {
+  line-height: var(--nh);
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  font-size: 2em;
+  display: none;
+}
+
+nav {
+  width: 100%;
+  height: var(--nh);
+  background-color: var(--bgt);
+  position: absolute;
+  top: 0px;
+}
+
+#banner {
+  background: url("img/party4.jpg");
+  background-color: rgba(39, 31, 31, 0.733);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.ultimate {
+  font-size: 3em;
+  font-family: "Neonderthaw", cursive;
+  animation-name: ultimate-animation;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  margin-top: 140px;
+}
+
+.party {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  font-family: "Neonderthaw", cursive;
+  animation-name: party-animation;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes ultimate-animation {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+}
+
+@keyframes party-animation {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+}
+
+.down-arrow {
+  font-size: 2.5em;
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  animation-name: arrow-animation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+.arrow i:nth-child(0) {
+  animation-delay: 0.2s;
+}
+.arrow i:nth-child(1) {
+  animation-delay: 0.4s;
+}
+.arrow i:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.arrow i:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+@keyframes arrow-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.hv_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(167, 6, 167);
+  text-align: justify;
+  width: 50%;
+  z-index: 0;
+}
+
+#menu {
+  position: relative;
+  z-index: 1;
+}
+
+.closebtn {
+  width: 100%;
+  text-align: center;
+  line-height: var(--rh);
+  font-size: 3em;
+  display: none;
+  color: red;
+}
+
+.col {
+  float: left;
+  overflow: auto;
+  width: 33%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* ---------- Edited by Swan Thu (Start) ---------- */
+.col .img-wrapper .image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px groove var(--bg);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-position: center center;
+  background-size: cover;
+  margin: 0px auto;
+  transition: border 0.5s;
+}
+
+.col .img-wrapper .image:hover {
+  border: 10px double var(--bg);
+}
+
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+/* ---------- Edited by Swan Thu (End) ---------- */
+
+.col p {
+  text-align: justify;
+  margin: 30px 50px;
+}
+
+#service h1, #contact h1 {
+  font-size: 3em;
+  font-family: "Quintessential", cursive;
+}
+#service h2 {
+  font-family: "Quintessential", cursive;
+}
+
+#service{
+  text-align: center;
+}
+
+#gallery h1 {
+  font-size: 3em;
+  font-family: "Quintessential", cursive;
+}
+
+.responsive {
+  width: 25%;
+  float: left;
+}
+
+.gallery-item {
+  margin: 5px;
+  position: relative;
+}
+
+#gallery {
+  text-align: center;
+  max-width: 1400px;
+  margin: 0px auto;
+  clear: both;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+}
+
+.gallery-item:hover .des{
+  opacity: 1;
+  
+}
+
+.gallery-item .des {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  bottom: 20px;
+  color: aliceblue;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.418);
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+#contact{
+  text-align: center;
+  padding-top: 10px;
+  clear: both;
+  max-width: 1400px;
+  margin: 0px auto;
+}
+
+#contact .col{
+  text-align: left;
+  width: 50%;
+  float: left;
+}
+
+#contact td{
+  font-family: "Quintessential", cursive;
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+.myform{
+  padding: 5px;
+}
+
+.myform input, textarea{
+  margin-top: 5px;
+  width: 100%;
+  border:rgba(39, 31, 31, 0.733) solid;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+.up{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: var(--bgt);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: aliceblue;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 1.7em;
+  z-index: 100;
+}
+
+@media screen and (max-width: 800px) {
+  nav .menu-bar {
+    display: block;
+    z-index: 2;
+  }
+
+  #menu {
+    display: none;
+    background-color: rgba(30, 35, 68, 0.678);
+  }
+
+  nav .links {
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  nav .links a {
+    float: none;
+    line-height: var(--rh);
+  }
+
+  nav .social {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav .social a {
+    line-height: var(--rh);
+  }
+
+  .closebtn {
+    display: block;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .responsive {
+    width: 50%;
+  }
+  .gallery-item img {
+    height: 200px;
+  }
+
+  #contact .col{
+    width: 100%;
+  }
+}
