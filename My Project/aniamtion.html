@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .mydiv1 {
+            width: 200px;
+            height: 200px;
+            background-color: crimson;
+            text-align: center;
+            animation-name: happy;
+            animation-duration: 6s;
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+            animation-timing-function: ease-out;
+            animation-fill-mode: both;
+        }
+
+        .parent1 {
+            perspective: 1000px;
+            width: 400px;
+            height: 400px;
+            margin: 100px auto;
+            padding: 30px;
+            overflow: auto;
+            background-color: black;
+        }
+
+        .mydiv {
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+            border-radius: 10%;
+            text-align: center;
+            line-height: 200px;
+            transition: background-color 1s, color 1s, transform 0.5s;
+            transition-delay: 0.5s;
+            transition-timing-function: ease-out;
+            display: inline-block;
+            font-size: 3em;
+            border: 5px blueviolet groove;
+        }
+
+        .mydiv:hover {
+            background-color: indianred;
+            color: lightblue;
+            transform: translateZ(100px) rotateX(360deg);
+        }
+
+        .parent {
+            text-align: center;
+            margin: 100px auto;
+            perspective: 1000px;
+        }
+
+        @keyframes happy {
+            0% {
+                background-color: darkkhaki;
+                border-radius: 0%;
+            }
+
+            25% {
+                transform: rotateX(-40deg) translate(50px, 0px);
+                background-color: floralwhite;
+                border-radius: 5%;
+            }
+
+            50% {
+                transform: rotateY(50deg) translate(100px, 200px);
+                background-color: blueviolet;
+                border-radius: 15%;
+            }
+
+            75% {
+                transform: rotateZ(40deg) translate(200px, 30px);
+                background-color: darkgray;
+                border-radius: 50%;
+            }
+
+            100% {
+                transform: translate3d(100px, 15px, 100px);
+                background-color: darkolivegreen;
+                border-radius: 40%;
+            }
+        }
+
+        .menu-item {
+            width: 20%;
+            height: 30px;
+            background-color: cadetblue;
+            color: black;
+            float: left;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        @media screen and (max-width: 800px) {
+            .menu-item {
+                width: 100%;
+                margin-bottom: 5px;
+                height: 40px;
+                line-height: 40px;
+            }
+
+            .heading {
+                display: none;
+            }
+        }
+
+        .heading {
+            width: 100%;
+            height: 100px;
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent1">
+        <div class="mydiv1">
+            <h1 style="padding-top: 70px;">LoL</h1>
+        </div>
+    </div>
+
+    <div class="parent">
+        <div class="mydiv">
+            Hello
+        </div>
+        <div class="mydiv">
+            Hello
+        </div>
+        <div class="mydiv">
+            Hello
+        </div>
+    </div>
+
+    <div class="heading"></div>
+    <div class="menu-item">Link</div>
+    <div class="menu-item">Link</div>
+    <div class="menu-item">Link</div>
+    <div class="menu-item">Link</div>
+    <div class="menu-item">Link</div>
+</body>
+
+</html>
