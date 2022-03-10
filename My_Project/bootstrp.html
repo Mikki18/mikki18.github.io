@@ -71,10 +71,25 @@
             <li class="breadcrumb-item active">Wapons</li>
         </ol>
 
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="../My_Project/project/img/party.jpg" alt="First slide">
+                    <div class="carousel-caption">
+                        <h3>Party</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur provident animi nulla
+                            sapiente sequi eaque. Corrupti voluptatibus maxime praesentium aperiam vero architecto
+                            eveniet
+                            adipisci tempora, qui illum modi, tempore sequi.
+                        </p>
+                        <a href="#" class="alert-link">Read More</a>
+                    </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="../My_Project/project/img/party2.jpg" alt="Second slide">
@@ -83,17 +98,17 @@
                     <img class="d-block w-100" src="../My_Project/project/img/party3.jpg" alt="Third slide">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
         </div>
 
-        <div class="row">
+        <div class="row mt-5">
             <div class="col-sm-4">
                 <div class="card">
                     <img src="../genshin/3.jpg" alt="" class="card-img-top">
@@ -102,13 +117,58 @@
                         <p class="card-text">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex praesentium repudiandae
                             voluptates vitae iusto aspernatur expedita ducimus amet molestias assumenda placeat,
-                            incidunt culpa nesciunt illo repellendus eius magni doloribus tempore. <a href="#"
-                                class="alert-link">Read More</a>
+                            incidunt culpa nesciunt illo repellendus eius magni doloribus tempore. <a href="#info"
+                                class="alert-link" data-toggle="collapse">Read More</a>
+                        </p>
+                        <p class="collapse" id="info">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus temporibus illo at,
+                            consequatur atque voluptas libero iusto tenetur facere beatae obcaecati, quidem iure sunt
+                            voluptate ut. Consectetur omnis odit harum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="../genshin/2.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Albedo Banner</h4>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex praesentium repudiandae
+                            voluptates vitae iusto aspernatur expedita ducimus amet molestias assumenda placeat,
+                            incidunt culpa nesciunt illo repellendus eius magni doloribus tempore. <a href="#info2"
+                                class="alert-link" data-toggle="collapse">Read More</a>
+                        </p>
+                        <p class="collapse" id="info2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus temporibus illo at,
+                            consequatur atque voluptas libero iusto tenetur facere beatae obcaecati, quidem iure sunt
+                            voluptate ut. Consectetur omnis odit harum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="../genshin/1.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Zhongli Banner</h4>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex praesentium repudiandae
+                            voluptates vitae iusto aspernatur expedita ducimus amet molestias assumenda placeat,
+                            incidunt culpa nesciunt illo repellendus eius magni doloribus tempore. <a href="#info1"
+                                class="alert-link" data-toggle="collapse">Read More</a>
+                        </p>
+                        <p class="collapse" id="info1">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus temporibus illo at,
+                            consequatur atque voluptas libero iusto tenetur facere beatae obcaecati, quidem iure sunt
+                            voluptate ut. Consectetur omnis odit harum.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
+        <a href="" class="btn btn-outline-dark btn-lg btn-block" data-target=".collapse" data-toggle="collapse">Show
+            All</a>
 
 
         <div class="media m-5">
