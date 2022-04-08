@@ -3,8 +3,25 @@
     height: 70px;
     display: inline;
     float: left;
-    margin-left: 100px;
+    margin-left: 35px;
 
+}
+
+.alert1 {
+    animation-name: alert;
+    animation-duration: 1.5s;
+    animation-delay: 5s;    
+    animation-fill-mode: both;
+}
+
+@keyframes alert {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 nav {
@@ -16,7 +33,7 @@ nav {
 }
 
 nav a {
-    color: rgb(226, 226, 226);
+    color: azure;
 }
 
 nav a:hover {
@@ -37,7 +54,6 @@ nav .tital {
     font-size: 2em;
     line-height: 70px;
     font-family: 'Rubik Wet Paint', cursive;
-    margin-right: 20px;
 }
 
 a:hover {
@@ -58,9 +74,7 @@ nav .social a {
 
 nav .social {
     display: inline;
-    float: right;
     font-size: 1.5em;
-    margin-right: 10px;
     perspective: 1000px;
 }
 
@@ -140,4 +154,70 @@ section {
     100% {
         opacity: 0;
     }
+}
+
+.photo1 {
+    animation-name: happy;
+    animation-duration: 1s;
+    animation-delay: 2s;    
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+@keyframes happy {
+    0% {
+        transform: translate(240px, 30px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(240px, 30px) rotate(10deg);
+    }
+}
+
+.photo2 {
+    animation-name: happy1;
+    animation-duration: 1s;
+    animation-delay: 2s;    
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+@keyframes happy1 {
+    0% {
+        transform: translate(60px,40px) rotate(0deg);
+    }
+
+    100% {
+        transform:translate(60px,40px) rotate(-12deg);
+    }
+}
+
+.des {
+    position: absolute;
+    width: 97%;
+    height: 30px;
+    line-height: 30px;
+    bottom: 20px;
+    color: azure;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.692);
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.col-4 {
+    transition: transform .4s;
+    transition-timing-function: ease-out;
+}
+
+.col-4:hover .des {
+    opacity: 1;
+}
+
+.col-4:hover {
+    transform: translateZ(19px);
 }
