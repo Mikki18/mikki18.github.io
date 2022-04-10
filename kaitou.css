@@ -10,7 +10,7 @@
 .alert1 {
     animation-name: alert;
     animation-duration: 1.5s;
-    animation-delay: 5s;    
+    animation-delay: 5s;
     animation-fill-mode: both;
 }
 
@@ -21,6 +21,41 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+.card {
+    position: fixed;
+    z-index: 5;
+    top: 26%;
+    left: 80%;
+    animation-name: card;
+    animation-duration: 15s;
+    animation-delay: 10s;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+@keyframes card {
+    0% {
+        transform: translateX(300px);
+    }
+
+    25%{
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(0px);
+    }
+
+    75% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(300px);
     }
 }
 
@@ -50,7 +85,7 @@ nav a:hover {
     height: 100vh;
 }
 
-nav .tital {
+.tital {
     font-size: 2em;
     line-height: 70px;
     font-family: 'Rubik Wet Paint', cursive;
@@ -60,42 +95,40 @@ a:hover {
     text-decoration: none;
 }
 
-nav .btn-group {
+.btn-group {
     font-family: "Quintessential", cursive;
     margin-bottom: 15px;
 }
 
-nav .social a {
-    line-height: 70px;
-    margin: 0px 5px;
-    display: inline-block;
-    transition: transform 0.8s;
-}
-
-nav .social {
+.social {
     display: inline;
-    font-size: 1.5em;
     perspective: 1000px;
 }
 
-nav .social a:hover {
-    transform: translateZ(50px);
+.social a {
+    line-height: 70px;
+    margin: 0px 5px;
+    transition: transform 0.8s;
 }
 
-nav .social1 {
+.social a:hover {
+    transform: translateX(50px);
+}
+
+.social1 {
     display: inline;
     margin-left: 230px;
     font-size: 1.5em;
 }
 
-nav .social1 a {
+.social1 a {
     line-height: 70px;
     margin: 0px 10px;
     display: inline-block;
     transition: transform 0.8s;
 }
 
-nav .social1 a:hover {
+.social1 a:hover {
     transform: rotateY(360deg);
 }
 
@@ -158,8 +191,8 @@ section {
 
 .photo1 {
     animation-name: happy;
-    animation-duration: 1s;
-    animation-delay: 2s;    
+    animation-duration: 1.5s;
+    animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-out;
@@ -178,8 +211,8 @@ section {
 
 .photo2 {
     animation-name: happy1;
-    animation-duration: 1s;
-    animation-delay: 2s;    
+    animation-duration: 1.5s;
+    animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-out;
@@ -188,11 +221,11 @@ section {
 
 @keyframes happy1 {
     0% {
-        transform: translate(60px,40px) rotate(0deg);
+        transform: translate(60px, 40px) rotate(0deg);
     }
 
     100% {
-        transform:translate(60px,40px) rotate(-12deg);
+        transform: translate(60px, 40px) rotate(-12deg);
     }
 }
 
