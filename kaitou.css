@@ -8,8 +8,8 @@
 
 .alert1 {
     animation-name: alert;
-    animation-duration: 1.5s;
-    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-delay: 10s;
     animation-fill-mode: both;
 }
 

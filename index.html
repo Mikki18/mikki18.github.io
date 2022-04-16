@@ -66,7 +66,27 @@
                     </div>
                     |
                     <div style="display: inline; margin-left: 10px;">
-                        <a href="#" class="btn btn-outline-info" style="width: 10%;">Sign In</a>
+                        <div id="si"
+                            style="display: none; background-color: rgba(0, 0, 0, 0.479); color: azure; width: 50%;"
+                            class="container p-4 border border-light rounded">
+                            <a href="#" onclick="document.getElementById('si').style.display = 'none'"
+                                style="margin-left: 490px;">
+                                <i class="far fa-times-circle"></i>
+                            </a>
+                            <form action="" method="get" class="mt-3">
+                                <div class="form-group">
+                                    <input class="form-control" type="email" name="" id="" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="password" name="" id="" placeholder="Password"
+                                        minlength="6">
+                                    <div class="text-muted">Password must be at least 6 characters</div>
+                                </div>
+                                <input class="btn btn-info" type="submit" value="Sign In" style="margin-left: 43%;">
+                            </form>
+                        </div>
+                        <a href="#" class="btn btn-outline-info" style="width: 10%;"
+                            onclick="document.getElementById('si').style.display = 'block' ">Sign In</a>
                         <a href="#" class="btn btn-primary" style="width: 10%;">Sign Up</a>
                     </div>
 
@@ -99,7 +119,8 @@
     <section id="games">
         <div style="background-color:rgb(5, 3, 19)">
             <div class="container pb-3">
-                <h1 style="color: azure; font-family: 'Raleway', sans-serif; padding-top: 30px; margin-left: 410px;">Trending games</h1>
+                <h1 style="color: azure; font-family: 'Raleway', sans-serif; padding-top: 30px; margin-left: 410px;">
+                    Trending games</h1>
                 <div id="carouselExampleIndicators" class="carousel slide pt-3" data-ride="carousel"
                     style="width: 570px; margin-left: 270px;">
                     <ol class="carousel-indicators">
@@ -470,7 +491,7 @@
                 </p>
             </div>
             <hr>
-            <span style="color: azure;">Copyright &copy; 2022 FreeFire Gaming</span>
+            <span style="color: azure;">Copyright &copy; 2022 FreeWatch Gaming</span>
         </div>
     </footer>
 
