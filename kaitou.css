@@ -4,7 +4,6 @@
     display: inline;
     float: left;
     margin-left: 35px;
-
 }
 
 .alert1 {
@@ -30,8 +29,8 @@
     top: 26%;
     left: 80%;
     animation-name: card;
-    animation-duration: 15s;
-    animation-delay: 10s;
+    animation-duration: 20s;
+    animation-delay: 30s;
     animation-direction: alternate;
     animation-timing-function: ease-out;
     animation-fill-mode: both;
@@ -42,15 +41,19 @@
         transform: translateX(300px);
     }
 
-    25%{
+    20% {
         transform: translateX(0px);
     }
 
-    50% {
+    40% {
         transform: translateX(0px);
     }
 
-    75% {
+    60% {
+        transform: translateX(0px);
+    }
+
+    80% {
         transform: translateX(0px);
     }
 
@@ -95,19 +98,18 @@ a:hover {
     text-decoration: none;
 }
 
-.btn-group {
-    font-family: "Quintessential", cursive;
-    margin-bottom: 15px;
-}
+
 
 .social {
     display: inline;
     perspective: 1000px;
+    margin-left: 500px;
 }
 
 .social a {
     line-height: 70px;
     margin: 0px 5px;
+    display: inline;
     transition: transform 0.8s;
 }
 
@@ -117,19 +119,21 @@ a:hover {
 
 .social1 {
     display: inline;
-    margin-left: 230px;
-    font-size: 1.5em;
+    margin-left: 189px;
+    margin-right: 5px;
+    font-size: 1.3em;
 }
 
 .social1 a {
     line-height: 70px;
-    margin: 0px 10px;
+    margin: 0px 6px;
     display: inline-block;
+    font-family: 'Raleway', sans-serif;
     transition: transform 0.8s;
 }
 
 .social1 a:hover {
-    transform: rotateY(360deg);
+    transform: translateZ(20px);
 }
 
 section {
@@ -253,4 +257,38 @@ section {
 
 .col-4:hover {
     transform: translateZ(19px);
+}
+
+.col {
+    width: 50%;
+    margin-bottom: 10px;
+    margin-left: 400px;
+}
+
+.social2 {
+    margin-left: 825px;
+    font-size: 1.5em;
+    perspective: 1000px;
+}
+
+.social2 a {
+    color: azure;
+    margin-left: 25px;
+}
+
+.social2 a:hover {
+    transform: translateZ(20px);
+    color: black;
+}
+
+.social p {
+    float: right;
+}
+
+.social p a {
+    color: azure;
+}
+
+.social p a:hover {
+    color: black;
 }
