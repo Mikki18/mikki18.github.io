@@ -1,535 +1,871 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title style="font-family: 'Rubik Puddles', cursive">
+      FIREWATCH Gaming
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title style="font-family: 'Rubik Puddles', cursive;">FIREWATCH Gaming</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="My_Project/project/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.css"
+    />
 
-    <link rel="stylesheet" href="My_Project/project/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="stylesheet" href="kaitou.css" />
+    <link rel="icon" href="genshin/gaming.png" />
 
-    <link rel="stylesheet" href="kaitou.css">
-    <link rel="icon" href="genshin/gaming.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <div class="container" style="z-index: 5; position: fixed; left: 190px; top: 50px;">
-        <div class="alert alert-success alert-dismissible fade show mt-4 alert1">
-            Congratulation Registration Successful!
-            <hr>
-            <a href="#" class="alert-link">Read our community guideline :)</a>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
+  <body>
+    <div
+      class="container"
+      style="z-index: 5; position: fixed; left: 190px; top: 50px"
+    >
+      <div class="alert alert-success alert-dismissible fade show mt-4 alert1">
+        Congratulation Registration Successful!
+        <hr />
+        <a href="#" class="alert-link">Read our community guideline :)</a>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="alert"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
     </div>
 
-    <div class="card" style="width: 18rem;" id="menu">
-        <img class="card-img-top" src="genshin/wallpaper.jpg" alt="Card image cap">
-        <div class="card-body" style="font-family: 'Raleway', sans-serif; text-align: center;">
-            <h5 class="card-title">New Game Available</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Harum blanditiis Lorem, ipsum</p>
-            <a href="https://youtu.be/wnUsoPAG5kY" target="_blank" rel="noopener noreferrer"
-                class="btn btn-outline-primary">Subscribe</a>
-        </div>
+    <div class="card" style="width: 18rem" id="menu">
+      <img
+        class="card-img-top"
+        src="genshin/wallpaper.jpg"
+        alt="Card image cap"
+      />
+      <div
+        class="card-body"
+        style="font-family: 'Raleway', sans-serif; text-align: center"
+      >
+        <h5 class="card-title">New Game Available</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+          blanditiis Lorem, ipsum
+        </p>
+        <a
+          href="https://youtu.be/wnUsoPAG5kY"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-outline-primary"
+          >Subscribe</a
+        >
+      </div>
     </div>
     <header>
-        <nav style="position: fixed; z-index: 5;">
-            <div class="container">
-                <div style="perspective: 1000px;">
-                    <img src="genshin/gaming.png" alt="" class="logo">
-                    <a href="#banner" class="tital">FIREWATCH</a>
+      <nav style="position: fixed; z-index: 5">
+        <div class="container">
+          <div style="perspective: 1000px">
+            <img src="genshin/gaming.png" alt="" class="logo" />
+            <a href="#banner" class="tital">FIREWATCH</a>
 
-                    <div class="social1">
-                        <a href="#banner">Home</a>
-                        <a href="#games">Games</a>
-                        <a href="#about">About</a>
-                        <a href="#contact">Contact</a>
-                    </div>
-                    |
-                    <div style="display: inline; margin-left: 10px;">
-                        <a href="#" class="btn btn-outline-info" style="width: 10%;"
-                            onclick="document.getElementById('si').style.display = 'block' ">Sign In</a>
-                        <a href="#" class="btn btn-primary" style="width: 10%;"
-                            onclick="document.getElementById('su').style.display = 'block' ">Sign Up</a>
-                        <div id="su"
-                            style="display: none; background-color: rgba(0, 0, 0, 0.479); color: azure; width: 50%;"
-                            class="container p-4 border border-light rounded">
-                            <a href="#" onclick="document.getElementById('su').style.display = 'none'"
-                                style="margin-left: 490px;">
-                                <i class="far fa-times-circle"></i>
-                            </a>
-                            <form action="" method="get" class="mt-3">
-                                <div class="form-group">
-                                    <input class="form-control" type="text" name="" id="" placeholder="Username">
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" type="email" name="" id="" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" type="password" name="" id="" placeholder="Password"
-                                        minlength="6">
-                                    <div class="text-muted">Password must be at least 6 characters</div>
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" type="password" name="" id=""
-                                        placeholder="Confirm Password" minlength="6">
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="gender" id="wb">
-                                    <label class="form-check-lable" for="wb" style="color:cadetblue">I accept the <a
-                                            href="">Terms of Use</a>
-                                        and <a href="">Privacy Policy</a></label>
-                                </div>
-                                <input class="btn btn-info" type="submit" value="Sign Up" style="margin-left: 42%;">
-                            </form>
-                        </div>
-                        <div id="si"
-                            style="display: none; background-color: rgba(0, 0, 0, 0.479); color: azure; width: 40%;"
-                            class="container p-4 border border-light rounded">
-                            <a href="#" onclick="document.getElementById('si').style.display = 'none'"
-                                style="margin-left: 385px;">
-                                <i class="far fa-times-circle"></i>
-                            </a>
-                            <form action="" method="get" class="mt-3">
-                                <div class="form-group">
-                                    <input class="form-control" type="email" name="" id="" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" type="password" name="" id="" placeholder="Password"
-                                        minlength="6">
-                                </div>
-                                <input class="btn btn-info" type="submit" value="Sign In" style="margin-left: 41%;">
-                            </form>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="social1">
+              <a href="#banner">Home</a>
+              <a href="#games">Games</a>
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
             </div>
-        </nav>
+            |
+            <div style="display: inline; margin-left: 10px">
+              <a
+                href="#"
+                class="btn btn-outline-info"
+                style="width: 10%"
+                onclick="document.getElementById('si').style.display = 'block' "
+                >Sign In</a
+              >
+              <a
+                href="#"
+                class="btn btn-primary"
+                style="width: 10%"
+                onclick="document.getElementById('su').style.display = 'block' "
+                >Sign Up</a
+              >
+              <div
+                id="su"
+                style="
+                  display: none;
+                  background-color: rgba(0, 0, 0, 0.479);
+                  color: azure;
+                  width: 50%;
+                "
+                class="container p-4 border border-light rounded"
+              >
+                <a
+                  href="#"
+                  onclick="document.getElementById('su').style.display = 'none'"
+                  style="margin-left: 490px"
+                >
+                  <i class="far fa-times-circle"></i>
+                </a>
+                <form action="" method="get" class="mt-3">
+                  <div class="form-group">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="Username"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      class="form-control"
+                      type="email"
+                      name=""
+                      id=""
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      class="form-control"
+                      type="password"
+                      name=""
+                      id=""
+                      placeholder="Password"
+                      minlength="6"
+                    />
+                    <div class="text-muted">
+                      Password must be at least 6 characters
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      class="form-control"
+                      type="password"
+                      name=""
+                      id=""
+                      placeholder="Confirm Password"
+                      minlength="6"
+                    />
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="gender"
+                      id="wb"
+                    />
+                    <label
+                      class="form-check-lable"
+                      for="wb"
+                      style="color: cadetblue"
+                      >I accept the <a href="">Terms of Use</a> and
+                      <a href="">Privacy Policy</a></label
+                    >
+                  </div>
+                  <input
+                    class="btn btn-info"
+                    type="submit"
+                    value="Sign Up"
+                    style="margin-left: 42%"
+                  />
+                </form>
+              </div>
+              <div
+                id="si"
+                style="
+                  display: none;
+                  background-color: rgba(0, 0, 0, 0.479);
+                  color: azure;
+                  width: 40%;
+                "
+                class="container p-4 border border-light rounded"
+              >
+                <a
+                  href="#"
+                  onclick="document.getElementById('si').style.display = 'none'"
+                  style="margin-left: 385px"
+                >
+                  <i class="far fa-times-circle"></i>
+                </a>
+                <form action="" method="get" class="mt-3">
+                  <div class="form-group">
+                    <input
+                      class="form-control"
+                      type="email"
+                      name=""
+                      id=""
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      class="form-control"
+                      type="password"
+                      name=""
+                      id=""
+                      placeholder="Password"
+                      minlength="6"
+                    />
+                  </div>
+                  <input
+                    class="btn btn-info"
+                    type="submit"
+                    value="Sign In"
+                    style="margin-left: 41%"
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
-
     <section id="banner">
-
-        <div class="hv_center container">
-            <div class="input-group" style="margin-bottom: 190px;">
-                <input type="search" name="" id="" placeholder="What're you looking for......"
-                    class="form-control border border-dark rounded">
-                <div class="input-group-append">
-                    <input type="submit" value="Search" class="btn btn-dark">
-                </div>
-            </div>
-
-            <div class="arrow">
-                <i class="fa-solid fa-angle-down down-arrow"></i>
-                <i class="fa-solid fa-angle-down down-arrow"></i>
-                <i class="fa-solid fa-angle-down down-arrow"></i>
-                <i class="fa-solid fa-angle-down down-arrow"></i>
-            </div>
+      <div class="hv_center container">
+        <div class="input-group" style="margin-bottom: 190px">
+          <input
+            type="search"
+            name=""
+            id=""
+            placeholder="What're you looking for......"
+            class="form-control border border-dark rounded"
+          />
+          <div class="input-group-append">
+            <input type="submit" value="Search" class="btn btn-dark" />
+          </div>
         </div>
+
+        <div class="arrow">
+          <i class="fa-solid fa-angle-down down-arrow"></i>
+          <i class="fa-solid fa-angle-down down-arrow"></i>
+          <i class="fa-solid fa-angle-down down-arrow"></i>
+          <i class="fa-solid fa-angle-down down-arrow"></i>
+        </div>
+      </div>
     </section>
 
     <section id="games">
-        <div style="background-color:rgb(5, 3, 19)">
-            <div class="container pb-3">
-                <h1 style="color: azure; font-family: 'Raleway', sans-serif; padding-top: 30px; margin-left: 410px;">
-                    Trending games</h1>
-                <div id="carouselExampleIndicators" class="carousel slide pt-3" data-ride="carousel"
-                    style="width: 570px; margin-left: 270px;">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="genshin/wallpaper.jpg" alt="First slide" width="570px"
-                                height="320px">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="genshin/wallpaper (1).jpg" alt="Second slide" width="570px"
-                                height="320px">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="genshin/wallpaper (2).jpg" alt="Third slide" width="570px"
-                                height="320px">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="genshin/wallpaper (3).jpg" alt="Fourth slide" width="570px"
-                                height="320px">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="genshin/wallpaper (4).jpg" alt="Fifth slide" width="570px"
-                                height="320px">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                <div class="row mb-1" style="perspective: 500px;">
-                    <a href="#" class="col-4">
-                        <h4 class="des">Action</h4><img src="" alt=""><img src="genshin/Action.jpg" alt="" width="370px"
-                            height="200px" class="border border-dark rounded">
-                    </a>
-                    <a href="#" class="col-4">
-                        <h4 class="des">Adventure</h4><img src="" alt=""><img src="genshin/Adventure.jpg" alt=""
-                            width="370px" height="200px" class="border border-danger rounded">
-                    </a>
-                    <a href="#" class="col-4">
-                        <h4 class="des">Arcade</h4><img src="" alt=""><img src="genshin/Arcade.jpg" alt="" width="370px"
-                            height="200px" class="border border-dark rounded">
-                    </a>
-
-                </div>
-                <div class="row mb-1" style="perspective: 500px;">
-                    <a href="#" class="col-4">
-                        <h4 class="des">Fighting</h4><img src="" alt=""><img src="genshin/Fighting.jpg" alt=""
-                            width="370px" height="200px" class="border border-primary rounded">
-                    </a>
-                    <a href="#" class="col-4">
-                        <h4 class="des">RPG</h4><img src="" alt=""><img src="genshin/RPG.jpg" alt="" width="370px"
-                            height="200px" class="border border-warning rounded">
-                    </a>
-                    <a href="#" class="col-4">
-                        <h4 class="des">FPS</h4><img src="" alt=""><img src="genshin/FPS.jpg" alt="" width="370px"
-                            height="200px" class="border border-primary rounded">
-                    </a>
-                </div>
-                <div class="row" style="perspective: 500px;">
-                    <a href="#" class="col-4">
-                        <h4 class="des">Strategy</h4><img src="" alt=""><img src="genshin/Strategy.jpg" alt=""
-                            width="370px" height="200px" class="border border-white rounded">
-                    </a>
-                    <a href="#" class="col-4">
-                        <h4 class="des">Single-Player</h4><img src="" alt=""><img src="genshin/Single-Player.jpg" alt=""
-                            width="370px" height="200px" class="border border-dark rounded">
-                    </a>
-                    <a href="#" class="col-4">
-                        <h4 class="des">VR</h4><img src="" alt=""><img src="genshin/VR.jpg" alt="" width="370px"
-                            height="200px" class="border border-white rounded">
-                    </a>
-                </div>
+      <div style="background-color: rgb(5, 3, 19)">
+        <div class="container pb-3">
+          <h1
+            style="
+              color: azure;
+              font-family: 'Raleway', sans-serif;
+              padding-top: 30px;
+              margin-left: 410px;
+            "
+          >
+            Trending games
+          </h1>
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide pt-3"
+            data-ride="carousel"
+            style="width: 570px; margin-left: 270px"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="3"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="4"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="d-block w-100"
+                  src="genshin/wallpaper.jpg"
+                  alt="First slide"
+                  width="570px"
+                  height="320px"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="genshin/wallpaper (1).jpg"
+                  alt="Second slide"
+                  width="570px"
+                  height="320px"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="genshin/wallpaper (2).jpg"
+                  alt="Third slide"
+                  width="570px"
+                  height="320px"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="genshin/wallpaper (3).jpg"
+                  alt="Fourth slide"
+                  width="570px"
+                  height="320px"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="genshin/wallpaper (4).jpg"
+                  alt="Fifth slide"
+                  width="570px"
+                  height="320px"
+                />
+              </div>
             </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="row mb-1" style="perspective: 500px">
+            <a href="#" class="col-4">
+              <h4 class="des">Action</h4>
+              <img src="" alt="" /><img
+                src="genshin/Action.jpg"
+                alt=""
+                width="370px"
+                height="200px"
+                class="border border-dark rounded"
+              />
+            </a>
+            <a href="#" class="col-4">
+              <h4 class="des">Adventure</h4>
+              <img src="" alt="" /><img
+                src="genshin/Adventure.jpg"
+                alt=""
+                width="370px"
+                height="200px"
+                class="border border-danger rounded"
+              />
+            </a>
+            <a href="#" class="col-4">
+              <h4 class="des">Arcade</h4>
+              <img src="" alt="" /><img
+                src="genshin/Arcade.jpg"
+                alt=""
+                width="370px"
+                height="200px"
+                class="border border-dark rounded"
+              />
+            </a>
+          </div>
+          <div class="row mb-1" style="perspective: 500px">
+            <a href="#" class="col-4">
+              <h4 class="des">Fighting</h4>
+              <img src="" alt="" /><img
+                src="genshin/Fighting.jpg"
+                alt=""
+                width="370px"
+                height="200px"
+                class="border border-primary rounded"
+              />
+            </a>
+            <a href="#" class="col-4">
+              <h4 class="des">RPG</h4>
+              <img src="" alt="" /><img
+                src="genshin/RPG.jpg"
+                alt=""
+                width="370px"
+                height="200px"
+                class="border border-warning rounded"
+              />
+            </a>
+            <a href="#" class="col-4">
+              <h4 class="des">FPS</h4>
+              <img src="" alt="" /><img
+                src="genshin/FPS.jpg"
+                alt=""
+                width="370px"
+                height="200px"
+                class="border border-primary rounded"
+              />
+            </a>
+          </div>
+          <div class="row" style="perspective: 500px">
+            <a href="#" class="col-4">
+              <h4 class="des">Strategy</h4>
+              <img src="" alt="" /><img
+                src="genshin/Strategy.jpg"
+                alt=""
+                width="370px"
+                height="200px"
+                class="border border-white rounded"
+              />
+            </a>
+            <a href="#" class="col-4">
+              <h4 class="des">Single-Player</h4>
+              <img src="" alt="" /><img
+                src="genshin/Single-Player.jpg"
+                alt=""
+                width="370px"
+                height="200px"
+                class="border border-dark rounded"
+              />
+            </a>
+            <a href="#" class="col-4">
+              <h4 class="des">VR</h4>
+              <img src="" alt="" /><img
+                src="genshin/VR.jpg"
+                alt=""
+                width="370px"
+                height="200px"
+                class="border border-white rounded"
+              />
+            </a>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="about">
+      <div
+        style="
+          background-color: rgb(2, 20, 20);
+          color: azure;
+          text-align: justify;
+          border-left: 10px solid orange;
+        "
+      >
+        <div class="container row p-5">
+          <div class="col-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis
+            molestie a iaculis at erat pellentesque adipiscing commodo elit.
+            Nunc sed blandit libero volutpat sed cras ornare arcu dui. Et leo
+            duis ut diam. Quam id leo in vitae turpis. Ornare arcu odio ut sem
+            nulla pharetra diam sit amet. Fringilla est ullamcorper eget nulla
+            facilisi etiam. Est ante in nibh mauris cursus mattis. Non enim
+            praesent elementum facilisis leo. Phasellus vestibulum lorem sed
+            risus ultricies tristique nulla aliquet enim. Tortor pretium viverra
+            suspendisse potenti. Ornare aenean euismod elementum nisi quis
+            eleifend. Id porta nibh venenatis cras. Nam aliquam sem et tortor
+            consequat id porta. Tortor at risus viverra adipiscing at. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            temporibus magni aspernatur optio, placeat quo cupiditate nostrum
+            totam non id cumque, blanditiis, fugit illum iste corrupti autem.
+            Repellendus, rem at! &nbsp;<a
+              href="#info"
+              class="alert-link"
+              data-toggle="collapse"
+              >Read More</a
+            >
 
-        <div
-            style="background-color: rgb(2, 20, 20); color: azure; text-align: justify; border-left: 10px solid orange">
-            <div class="container row p-5">
-                <div class="col-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Nunc
-                    sed
-                    blandit libero volutpat sed cras ornare arcu dui. Et leo duis ut diam. Quam id leo in vitae turpis.
-                    Ornare arcu odio ut sem nulla pharetra diam sit amet. Fringilla est ullamcorper eget nulla facilisi
-                    etiam. Est ante in nibh mauris cursus mattis. Non enim praesent elementum facilisis leo. Phasellus
-                    vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Tortor pretium viverra
-                    suspendisse
-                    potenti. Ornare aenean euismod elementum nisi quis eleifend. Id porta nibh venenatis cras. Nam
-                    aliquam
-                    sem et tortor consequat id porta. Tortor at risus viverra adipiscing at. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Suscipit temporibus magni aspernatur optio, placeat quo cupiditate
-                    nostrum
-                    totam non id cumque, blanditiis, fugit illum iste corrupti autem. Repellendus, rem at! &nbsp;<a
-                        href="#info" class="alert-link" data-toggle="collapse">Read More</a>
-
-                    <p id="info" class="collapse">
-                        At lectus urna duis convallis. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Congue
-                        quisque
-                        egestas diam in arcu cursus. Elit pellentesque habitant morbi tristique senectus et netus.
-                        Adipiscing
-                        vitae proin sagittis nisl rhoncus mattis rhoncus. Lorem ipsum dolor sit amet consectetur
-                        adipiscing.
-                        Eu
-                        augue ut lectus arcu bibendum at. Aliquet eget sit amet tellus cras adipiscing enim. Feugiat
-                        nibh
-                        sed
-                        pulvinar proin gravida. Ac tortor dignissim convallis aenean et. Non curabitur gravida arcu ac.
-                        Mauris
-                        cursus mattis molestie a iaculis. Ante metus dictum at tempor commodo ullamcorper. Congue eu
-                        consequat
-                        ac felis. Pulvinar mattis nunc sed blandit libero volutpat sed cras ornare.
-                    </p>
-                </div>
-                <div class="col-6  photo1">
-                    <img src="genshin/game.jpg" alt="" width="570px" height="320px" class="border
-                border-dark rounded">
-                </div>
-            </div>
+            <p id="info" class="collapse">
+              At lectus urna duis convallis. Lorem mollis aliquam ut porttitor
+              leo a diam sollicitudin. Congue quisque egestas diam in arcu
+              cursus. Elit pellentesque habitant morbi tristique senectus et
+              netus. Adipiscing vitae proin sagittis nisl rhoncus mattis
+              rhoncus. Lorem ipsum dolor sit amet consectetur adipiscing. Eu
+              augue ut lectus arcu bibendum at. Aliquet eget sit amet tellus
+              cras adipiscing enim. Feugiat nibh sed pulvinar proin gravida. Ac
+              tortor dignissim convallis aenean et. Non curabitur gravida arcu
+              ac. Mauris cursus mattis molestie a iaculis. Ante metus dictum at
+              tempor commodo ullamcorper. Congue eu consequat ac felis. Pulvinar
+              mattis nunc sed blandit libero volutpat sed cras ornare.
+            </p>
+          </div>
+          <div class="col-6 photo1">
+            <img
+              src="genshin/game.jpg"
+              alt=""
+              width="570px"
+              height="320px"
+              class="border border-dark rounded"
+            />
+          </div>
         </div>
+      </div>
 
-        <div style="background-color:rgb(5, 3, 19); color:azure; text-align: justify; border-right: 10px solid orange">
-            <div class="container row p-5">
-                <div class="col-6 photo2">
-                    <img src="genshin/game1.jpg" alt="" width="570px" height="320px" class="border
-                border-dark rounded">
-                </div>
-                <div class="col-6" style="transform: translateX(350px);">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Nunc
-                    sed
-                    blandit libero volutpat sed cras ornare arcu dui. Et leo duis ut diam. Quam id leo in vitae turpis.
-                    Ornare arcu odio ut sem nulla pharetra diam sit amet. Fringilla est ullamcorper eget nulla facilisi
-                    etiam. Est ante in nibh mauris cursus mattis. Non enim praesent elementum facilisis leo. Phasellus
-                    vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Tortor pretium viverra
-                    suspendisse
-                    potenti. Ornare aenean euismod elementum nisi quis eleifend. Id porta nibh venenatis cras. Nam
-                    aliquam
-                    sem et tortor consequat id porta. Tortor at risus viverra adipiscing at. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Suscipit temporibus magni aspernatur optio, placeat quo cupiditate
-                    nostrum
-                    totam non id cumque, blanditiis, fugit illum iste corrupti autem. Repellendus, rem at! &nbsp;<a
-                        href="#info1" class="alert-link" data-toggle="collapse">Read More</a>
+      <div
+        style="
+          background-color: rgb(5, 3, 19);
+          color: azure;
+          text-align: justify;
+          border-right: 10px solid orange;
+        "
+      >
+        <div class="container row p-5">
+          <div class="col-6 photo2">
+            <img
+              src="genshin/game1.jpg"
+              alt=""
+              width="570px"
+              height="320px"
+              class="border border-dark rounded"
+            />
+          </div>
+          <div class="col-6" style="transform: translateX(350px)">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis
+            molestie a iaculis at erat pellentesque adipiscing commodo elit.
+            Nunc sed blandit libero volutpat sed cras ornare arcu dui. Et leo
+            duis ut diam. Quam id leo in vitae turpis. Ornare arcu odio ut sem
+            nulla pharetra diam sit amet. Fringilla est ullamcorper eget nulla
+            facilisi etiam. Est ante in nibh mauris cursus mattis. Non enim
+            praesent elementum facilisis leo. Phasellus vestibulum lorem sed
+            risus ultricies tristique nulla aliquet enim. Tortor pretium viverra
+            suspendisse potenti. Ornare aenean euismod elementum nisi quis
+            eleifend. Id porta nibh venenatis cras. Nam aliquam sem et tortor
+            consequat id porta. Tortor at risus viverra adipiscing at. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            temporibus magni aspernatur optio, placeat quo cupiditate nostrum
+            totam non id cumque, blanditiis, fugit illum iste corrupti autem.
+            Repellendus, rem at! &nbsp;<a
+              href="#info1"
+              class="alert-link"
+              data-toggle="collapse"
+              >Read More</a
+            >
 
-                    <p id="info1" class="collapse">
-                        At lectus urna duis convallis. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Congue
-                        quisque
-                        egestas diam in arcu cursus. Elit pellentesque habitant morbi tristique senectus et netus.
-                        Adipiscing
-                        vitae proin sagittis nisl rhoncus mattis rhoncus. Lorem ipsum dolor sit amet consectetur
-                        adipiscing.
-                        Eu
-                        augue ut lectus arcu bibendum at. Aliquet eget sit amet tellus cras adipiscing enim. Feugiat
-                        nibh
-                        sed
-                        pulvinar proin gravida. Ac tortor dignissim convallis aenean et. Non curabitur gravida arcu ac.
-                        Mauris
-                        cursus mattis molestie a iaculis. Ante metus dictum at tempor commodo ullamcorper. Congue eu
-                        consequat
-                        ac felis. Pulvinar mattis nunc sed blandit libero volutpat sed cras ornare.
-                    </p>
-                </div>
-            </div>
+            <p id="info1" class="collapse">
+              At lectus urna duis convallis. Lorem mollis aliquam ut porttitor
+              leo a diam sollicitudin. Congue quisque egestas diam in arcu
+              cursus. Elit pellentesque habitant morbi tristique senectus et
+              netus. Adipiscing vitae proin sagittis nisl rhoncus mattis
+              rhoncus. Lorem ipsum dolor sit amet consectetur adipiscing. Eu
+              augue ut lectus arcu bibendum at. Aliquet eget sit amet tellus
+              cras adipiscing enim. Feugiat nibh sed pulvinar proin gravida. Ac
+              tortor dignissim convallis aenean et. Non curabitur gravida arcu
+              ac. Mauris cursus mattis molestie a iaculis. Ante metus dictum at
+              tempor commodo ullamcorper. Congue eu consequat ac felis. Pulvinar
+              mattis nunc sed blandit libero volutpat sed cras ornare.
+            </p>
+          </div>
         </div>
+      </div>
 
-        <div style="background-color:rgb(2, 20, 20); color: azure; text-align: justify; border-left: 10px solid orange">
-            <div class="container row p-5">
-                <div class="col-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Nunc
-                    sed
-                    blandit libero volutpat sed cras ornare arcu dui. Et leo duis ut diam. Quam id leo in vitae turpis.
-                    Ornare arcu odio ut sem nulla pharetra diam sit amet. Fringilla est ullamcorper eget nulla facilisi
-                    etiam. Est ante in nibh mauris cursus mattis. Non enim praesent elementum facilisis leo. Phasellus
-                    vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Tortor pretium viverra
-                    suspendisse
-                    potenti. Ornare aenean euismod elementum nisi quis eleifend. Id porta nibh venenatis cras. Nam
-                    aliquam
-                    sem et tortor consequat id porta. Tortor at risus viverra adipiscing at. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Suscipit temporibus magni aspernatur optio, placeat quo cupiditate
-                    nostrum
-                    totam non id cumque, blanditiis, fugit illum iste corrupti autem. Repellendus, rem at! &nbsp;<a
-                        href="#info2" class="alert-link" data-toggle="collapse">Read More</a>
+      <div
+        style="
+          background-color: rgb(2, 20, 20);
+          color: azure;
+          text-align: justify;
+          border-left: 10px solid orange;
+        "
+      >
+        <div class="container row p-5">
+          <div class="col-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis
+            molestie a iaculis at erat pellentesque adipiscing commodo elit.
+            Nunc sed blandit libero volutpat sed cras ornare arcu dui. Et leo
+            duis ut diam. Quam id leo in vitae turpis. Ornare arcu odio ut sem
+            nulla pharetra diam sit amet. Fringilla est ullamcorper eget nulla
+            facilisi etiam. Est ante in nibh mauris cursus mattis. Non enim
+            praesent elementum facilisis leo. Phasellus vestibulum lorem sed
+            risus ultricies tristique nulla aliquet enim. Tortor pretium viverra
+            suspendisse potenti. Ornare aenean euismod elementum nisi quis
+            eleifend. Id porta nibh venenatis cras. Nam aliquam sem et tortor
+            consequat id porta. Tortor at risus viverra adipiscing at. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            temporibus magni aspernatur optio, placeat quo cupiditate nostrum
+            totam non id cumque, blanditiis, fugit illum iste corrupti autem.
+            Repellendus, rem at! &nbsp;<a
+              href="#info2"
+              class="alert-link"
+              data-toggle="collapse"
+              >Read More</a
+            >
 
-                    <p id="info2" class="collapse">
-                        At lectus urna duis convallis. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Congue
-                        quisque
-                        egestas diam in arcu cursus. Elit pellentesque habitant morbi tristique senectus et netus.
-                        Adipiscing
-                        vitae proin sagittis nisl rhoncus mattis rhoncus. Lorem ipsum dolor sit amet consectetur
-                        adipiscing.
-                        Eu
-                        augue ut lectus arcu bibendum at. Aliquet eget sit amet tellus cras adipiscing enim. Feugiat
-                        nibh
-                        sed
-                        pulvinar proin gravida. Ac tortor dignissim convallis aenean et. Non curabitur gravida arcu ac.
-                        Mauris
-                        cursus mattis molestie a iaculis. Ante metus dictum at tempor commodo ullamcorper. Congue eu
-                        consequat
-                        ac felis. Pulvinar mattis nunc sed blandit libero volutpat sed cras ornare.
-                    </p>
-                </div>
-                <div class="col-6 photo1">
-                    <img src="genshin/game2.jpg" alt="" width="570px" height="320px" class="border
-                border-dark rounded">
-                </div>
-            </div>
+            <p id="info2" class="collapse">
+              At lectus urna duis convallis. Lorem mollis aliquam ut porttitor
+              leo a diam sollicitudin. Congue quisque egestas diam in arcu
+              cursus. Elit pellentesque habitant morbi tristique senectus et
+              netus. Adipiscing vitae proin sagittis nisl rhoncus mattis
+              rhoncus. Lorem ipsum dolor sit amet consectetur adipiscing. Eu
+              augue ut lectus arcu bibendum at. Aliquet eget sit amet tellus
+              cras adipiscing enim. Feugiat nibh sed pulvinar proin gravida. Ac
+              tortor dignissim convallis aenean et. Non curabitur gravida arcu
+              ac. Mauris cursus mattis molestie a iaculis. Ante metus dictum at
+              tempor commodo ullamcorper. Congue eu consequat ac felis. Pulvinar
+              mattis nunc sed blandit libero volutpat sed cras ornare.
+            </p>
+          </div>
+          <div class="col-6 photo1">
+            <img
+              src="genshin/game2.jpg"
+              alt=""
+              width="570px"
+              height="320px"
+              class="border border-dark rounded"
+            />
+          </div>
         </div>
+      </div>
 
-        <div style="background-color:rgb(5, 3, 19); color:azure; text-align: justify; border-right: 10px solid orange">
-            <div class="container row p-5">
-                <div class="col-6 photo2">
-                    <img src="genshin/game3.jpg" alt="" width="570px" height="320px" class="border
-                border-dark rounded">
-                </div>
-                <div class="col-6" style="transform: translateX(350px);">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Nunc
-                    sed
-                    blandit libero volutpat sed cras ornare arcu dui. Et leo duis ut diam. Quam id leo in vitae turpis.
-                    Ornare arcu odio ut sem nulla pharetra diam sit amet. Fringilla est ullamcorper eget nulla facilisi
-                    etiam. Est ante in nibh mauris cursus mattis. Non enim praesent elementum facilisis leo. Phasellus
-                    vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Tortor pretium viverra
-                    suspendisse
-                    potenti. Ornare aenean euismod elementum nisi quis eleifend. Id porta nibh venenatis cras. Nam
-                    aliquam
-                    sem et tortor consequat id porta. Tortor at risus viverra adipiscing at. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Suscipit temporibus magni aspernatur optio, placeat quo cupiditate
-                    nostrum
-                    totam non id cumque, blanditiis, fugit illum iste corrupti autem. Repellendus, rem at! &nbsp;<a
-                        href="#info3" class="alert-link" data-toggle="collapse">Read More</a>
+      <div
+        style="
+          background-color: rgb(5, 3, 19);
+          color: azure;
+          text-align: justify;
+          border-right: 10px solid orange;
+        "
+      >
+        <div class="container row p-5">
+          <div class="col-6 photo2">
+            <img
+              src="genshin/game3.jpg"
+              alt=""
+              width="570px"
+              height="320px"
+              class="border border-dark rounded"
+            />
+          </div>
+          <div class="col-6" style="transform: translateX(350px)">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis
+            molestie a iaculis at erat pellentesque adipiscing commodo elit.
+            Nunc sed blandit libero volutpat sed cras ornare arcu dui. Et leo
+            duis ut diam. Quam id leo in vitae turpis. Ornare arcu odio ut sem
+            nulla pharetra diam sit amet. Fringilla est ullamcorper eget nulla
+            facilisi etiam. Est ante in nibh mauris cursus mattis. Non enim
+            praesent elementum facilisis leo. Phasellus vestibulum lorem sed
+            risus ultricies tristique nulla aliquet enim. Tortor pretium viverra
+            suspendisse potenti. Ornare aenean euismod elementum nisi quis
+            eleifend. Id porta nibh venenatis cras. Nam aliquam sem et tortor
+            consequat id porta. Tortor at risus viverra adipiscing at. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            temporibus magni aspernatur optio, placeat quo cupiditate nostrum
+            totam non id cumque, blanditiis, fugit illum iste corrupti autem.
+            Repellendus, rem at! &nbsp;<a
+              href="#info3"
+              class="alert-link"
+              data-toggle="collapse"
+              >Read More</a
+            >
 
-                    <p id="info3" class="collapse">
-                        At lectus urna duis convallis. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Congue
-                        quisque
-                        egestas diam in arcu cursus. Elit pellentesque habitant morbi tristique senectus et netus.
-                        Adipiscing
-                        vitae proin sagittis nisl rhoncus mattis rhoncus. Lorem ipsum dolor sit amet consectetur
-                        adipiscing.
-                        Eu
-                        augue ut lectus arcu bibendum at. Aliquet eget sit amet tellus cras adipiscing enim. Feugiat
-                        nibh
-                        sed
-                        pulvinar proin gravida. Ac tortor dignissim convallis aenean et. Non curabitur gravida arcu ac.
-                        Mauris
-                        cursus mattis molestie a iaculis. Ante metus dictum at tempor commodo ullamcorper. Congue eu
-                        consequat
-                        ac felis. Pulvinar mattis nunc sed blandit libero volutpat sed cras ornare.
-                    </p>
-                </div>
-            </div>
+            <p id="info3" class="collapse">
+              At lectus urna duis convallis. Lorem mollis aliquam ut porttitor
+              leo a diam sollicitudin. Congue quisque egestas diam in arcu
+              cursus. Elit pellentesque habitant morbi tristique senectus et
+              netus. Adipiscing vitae proin sagittis nisl rhoncus mattis
+              rhoncus. Lorem ipsum dolor sit amet consectetur adipiscing. Eu
+              augue ut lectus arcu bibendum at. Aliquet eget sit amet tellus
+              cras adipiscing enim. Feugiat nibh sed pulvinar proin gravida. Ac
+              tortor dignissim convallis aenean et. Non curabitur gravida arcu
+              ac. Mauris cursus mattis molestie a iaculis. Ante metus dictum at
+              tempor commodo ullamcorper. Congue eu consequat ac felis. Pulvinar
+              mattis nunc sed blandit libero volutpat sed cras ornare.
+            </p>
+          </div>
         </div>
-
+      </div>
     </section>
 
-    <section id="contact" style="background-color: azure;">
-        <div class="container" style="display: inline;">
-            <div class="col p-3">
-                    <legend>Don't hesitate to give feedback!</legend>
-                    <table cellpadding="10">
-                        <tr>
-                            <td><i class="fa-solid fa-phone"></i></td>
-                            <td>09408008624</td>
-                            <td rowspan="4" style="width: 6000px;">
-                                <div class="border border-secondary rounded p-3"
-                                    style="margin-top: 50%; margin-left: 20px;">
-                                    <form action="" method="get">
-                                        <div class="form-group">
-                                            <input class="form-control" type="text" name="" id="" placeholder="Name">
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-control" type="email" name="" id="" placeholder="Email">
-                                        </div>
-                                        <div class="form-group">
-                                            <textarea class="form-control" name="" id=""></textarea>
-                                        </div>
-                                        <input class="btn btn-secondary" type="submit" value="Contact"
-                                            style="margin-left: 33%;">
-                                    </form>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa-solid fa-envelope"></i></td>
-                            <td>hanatsubamaiki@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa-solid fa-location-dot"></i></td>
-                            <td>Thingangyun Education Degree Collage , Zae Wai Yar St , U Ba Han St , Lay Daungkan Rd ,
-                                BOC
-                                Bus Stop
-                                ,
-                                Thingangyun Township , Yangon .
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <iframe class="border border-success rounded"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.7150272496638!2d96.2007298146948!3d16.833211122981744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf9ae977f581eaea!2zMTbCsDQ5JzU5LjUiTiA5NsKwMTInMTAuNSJF!5e1!3m2!1sen!2smm!4v1649856846800!5m2!1sen!2smm"
-                                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </td>
-                        </tr>
-                    </table>
-            </div>
-            <div class="media m-5" style="text-align: justify;">
-                <img src="genshin/ᴱᴰᵀ ᴮᵞ_ ᴬᴺᴳᵁˢ.jpg" alt="" width="130px" height="130px"
-                    class="m-2 align-self-end border border-dark rounded-circle">
-                <div class="media-body p-2">
-                    <i><b>Announcement</b></i>
-                    <hr>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea
-                    commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                    anim
-                    id est
-                    laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et
-                    dolore Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quaerat deserunt mollitia ut
-                    exercitationem rem fugiat sequi earum veniam temporibus provident ducimus repellendus quibusdam
-                    perferendis, ratione qui distinctio sapiente impedit?
+    <section id="contact" style="background-color: azure">
+      <div class="container" style="display: inline">
+        <div class="col p-3">
+          <legend>Don't hesitate to give feedback!</legend>
+          <table cellpadding="10">
+            <tr>
+              <td><i class="fa-solid fa-phone"></i></td>
+              <td>09408008624</td>
+              <td rowspan="4" style="width: 6000px">
+                <div
+                  class="border border-secondary rounded p-3"
+                  style="margin-top: 50%; margin-left: 20px"
+                >
+                  <form action="" method="get">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        type="email"
+                        name=""
+                        id=""
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" name="" id=""></textarea>
+                    </div>
+                    <input
+                      class="btn btn-secondary"
+                      type="submit"
+                      value="Contact"
+                      style="margin-left: 33%"
+                    />
+                  </form>
                 </div>
-            </div>
+              </td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-envelope"></i></td>
+              <td>hanatsubamaiki@gmail.com</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-location-dot"></i></td>
+              <td>
+                Thingangyun Education Degree Collage , Zae Wai Yar St , U Ba Han
+                St , Lay Daungkan Rd , BOC Bus Stop , Thingangyun Township ,
+                Yangon .
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <iframe
+                  class="border border-success rounded"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.7150272496638!2d96.2007298146948!3d16.833211122981744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf9ae977f581eaea!2zMTbCsDQ5JzU5LjUiTiA5NsKwMTInMTAuNSJF!5e1!3m2!1sen!2smm!4v1649856846800!5m2!1sen!2smm"
+                  width="400"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </td>
+            </tr>
+          </table>
         </div>
+        <div class="media m-5" style="text-align: justify">
+          <img
+            src="genshin/ᴱᴰᵀ ᴮᵞ_ ᴬᴺᴳᵁˢ.jpg"
+            alt=""
+            width="130px"
+            height="130px"
+            class="m-2 align-self-end border border-dark rounded-circle"
+          />
+          <div class="media-body p-2">
+            <i><b>Announcement</b></i>
+            <hr />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Animi quaerat deserunt mollitia ut
+            exercitationem rem fugiat sequi earum veniam temporibus provident
+            ducimus repellendus quibusdam perferendis, ratione qui distinctio
+            sapiente impedit?
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer style="background-color: rgb(79, 109, 121); height: 250px; padding: 20px;">
-        <div class="container">
-            <img src="genshin/gaming.png" alt="" class="logo">
-            <a href="#banner" class="tital" style="color: azure;">FIREWATCH</a>
-            <div class="social">
-                <a href="#">
-                    <img src="genshin/play-store-logo-nisi-filters-australia-11.png" alt=""
-                        style="width: 100px; height: 40px;">
-                </a>
-                <a href="#">
-                    <img src="genshin/apple-store-icon-4.jpg" alt="" style="width: 100px; height: 36px;">
-                </a>
-                <span class="social2">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                </span>
-                <p>
-                    <a href="">Terms of Use</a> | <a href="">Privacy Policy</a> | <a href="">Help</a>
-                </p>
-            </div>
-            <hr>
-            <span style="color: azure;">Copyright &copy; 2022 FreeWatch Gaming</span>
+    <footer
+      style="background-color: rgb(79, 109, 121); height: 250px; padding: 20px"
+    >
+      <div class="container">
+        <img src="genshin/gaming.png" alt="" class="logo" />
+        <a href="#banner" class="tital" style="color: azure">FIREWATCH</a>
+        <div class="social">
+          <a href="#">
+            <img
+              src="genshin/play-store-logo-nisi-filters-australia-11.png"
+              alt=""
+              style="width: 100px; height: 40px"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="genshin/apple-store-icon-4.jpg"
+              alt=""
+              style="width: 100px; height: 36px"
+            />
+          </a>
+          <span class="social2">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </span>
+          <p></p>
         </div>
+        <hr />
+        <span style="color: azure">Copyright &copy; 2022 FreeWatch Gaming</span>
+        <span class="rule"
+          ><a href="">Terms of Use</a> | <a href="">Privacy Policy</a> |
+          <a href="">Help</a></span
+        >
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>

@@ -262,7 +262,9 @@ section {
     width: 50%;
     margin-bottom: 10px;
     margin-left: 400px;
-    border: groove 10px rgb(79, 109, 121);
+    border: groove 20px rgb(79, 109, 121);
+    background-color: rgb(2, 20, 20);
+    color: azure;
 }
 
 .social2 {
@@ -281,14 +283,14 @@ section {
     color: black;
 }
 
-.social p {
+.rule {
     float: right;
 }
 
-.social p a {
+.rule a {
     color: azure;
 }
 
-.social p a:hover {
+.rule a:hover {
     color: black;
 }
